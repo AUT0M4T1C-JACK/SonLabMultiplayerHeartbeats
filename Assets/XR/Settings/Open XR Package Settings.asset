@@ -16,7 +16,7 @@ MonoBehaviour:
   nameUi: 'Meta Quest: AR Camera (Passthrough)'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-meta-camera
-  openxrExtensionStrings: XR_FB_passthrough XR_FB_composition_layer_alpha_blend
+  openxrExtensionStrings: XR_FB_passthrough
   company: Unity Technologies
   priority: 0
   required: 0
@@ -234,11 +234,11 @@ MonoBehaviour:
   m_Name: HTCViveControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: HTC Vive Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.htcvive
   openxrExtensionStrings: 
-  company: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-7773718812875860609
@@ -376,14 +376,6 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -7694160602917947448}
-  - {fileID: 3815610357655045091}
-  - {fileID: -224957638745922977}
-  - {fileID: 1058352586708978145}
-  - {fileID: -8024992293453219442}
-  - {fileID: 7264203609154613141}
-  - {fileID: 2146937260252289559}
-  - {fileID: 4553629234552855987}
   - {fileID: 4963040286616351577}
   - {fileID: 5883027821610069653}
   - {fileID: 4893829345954421791}
@@ -393,7 +385,14 @@ MonoBehaviour:
   - {fileID: 2497339995422133549}
   - {fileID: -5941725581135416239}
   - {fileID: 2163979698669853125}
+  - {fileID: 2146937260252289559}
   - {fileID: -7351301907148479589}
+  - {fileID: 7264203609154613141}
+  - {fileID: 3815610357655045091}
+  - {fileID: -224957638745922977}
+  - {fileID: -7694160602917947448}
+  - {fileID: 1058352586708978145}
+  - {fileID: -8024992293453219442}
   - {fileID: 1507748248788215057}
   - {fileID: 7413458854745118488}
   - {fileID: 4054846353496584751}
@@ -401,6 +400,7 @@ MonoBehaviour:
   - {fileID: 7852363257649216605}
   - {fileID: 2316775424616146661}
   - {fileID: -5611916350011621528}
+  - {fileID: 4553629234552855987}
   - {fileID: -9079316085892945041}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
@@ -566,12 +566,12 @@ MonoBehaviour:
   m_Name: HandTracking Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
-  priority: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
   required: 0
 --- !u!114 &-5660158769283318620
 MonoBehaviour:
@@ -626,11 +626,11 @@ MonoBehaviour:
   m_Name: ValveIndexControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: Valve Index Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.valveindex
   openxrExtensionStrings: 
-  company: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-5266021458503843029
@@ -646,11 +646,11 @@ MonoBehaviour:
   m_Name: HPReverbG2ControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: HP Reverb G2 Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.hpreverb
+  openxrExtensionStrings: XR_EXT_hp_mixed_reality_controller
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-5190053797094401786
@@ -687,11 +687,11 @@ MonoBehaviour:
   m_Name: HandInteractionProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Hand Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handinteraction
+  openxrExtensionStrings: XR_EXT_hand_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-5022441705129952878
@@ -767,11 +767,11 @@ MonoBehaviour:
   m_Name: ConformanceAutomationFeature Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Conformance Automation
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.conformance
+  openxrExtensionStrings: XR_EXT_conformance_automation
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-3884623058556172510
@@ -1003,11 +1003,11 @@ MonoBehaviour:
   m_Name: OculusTouchControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: Oculus Touch Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.oculustouch
   openxrExtensionStrings: 
-  company: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-2176741581092389660
@@ -1023,11 +1023,11 @@ MonoBehaviour:
   m_Name: MetaQuestTouchProControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Touch Pro Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestpro
+  openxrExtensionStrings: XR_FB_touch_controller_pro
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-2037261744964044817
@@ -1123,11 +1123,11 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-1190772441457569148
@@ -1264,8 +1264,7 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 5318875876809220302}
-  - {fileID: 264903490157324265}
+  - {fileID: 1911531707545204605}
   - {fileID: 7558681416710770871}
   - {fileID: 1439519674761587512}
   - {fileID: 3554264124859437666}
@@ -1274,19 +1273,20 @@ MonoBehaviour:
   - {fileID: 9020184986697725232}
   - {fileID: -1190772441457569148}
   - {fileID: 7497383018830012468}
+  - {fileID: 5318875876809220302}
   - {fileID: -1025905340561916859}
   - {fileID: 8808601203237548436}
-  - {fileID: 7563124520776219742}
+  - {fileID: -9158263212284301082}
   - {fileID: 7717511180681032800}
   - {fileID: 6612400554289680647}
-  - {fileID: 8594420097343157094}
-  - {fileID: 624869861315048294}
+  - {fileID: -8470163300371861798}
   - {fileID: -3884623058556172510}
   - {fileID: -5190053797094401786}
   - {fileID: -6078868055869984845}
   - {fileID: 4743943348186933471}
   - {fileID: -4998711357189552741}
   - {fileID: -7581625304019661375}
+  - {fileID: 264903490157324265}
   - {fileID: -626350575328049508}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
@@ -1388,11 +1388,11 @@ MonoBehaviour:
   m_Name: RuntimeDebuggerOpenXRFeature Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: Runtime Debugger
+  version: 1
+  featureIdInternal: com.unity.openxr.features.runtimedebugger
   openxrExtensionStrings: 
-  company: 
+  company: Unity
   priority: 0
   required: 0
   cacheSize: 1048576
@@ -1450,11 +1450,11 @@ MonoBehaviour:
   m_Name: MetaQuestTouchPlusControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Touch Plus Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestplus
+  openxrExtensionStrings: XR_META_touch_controller_plus
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &499066867633824850
@@ -1645,11 +1645,11 @@ MonoBehaviour:
   m_Name: HandCommonPosesInteraction Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Hand Interaction Poses
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handinteractionposes
+  openxrExtensionStrings: XR_EXT_hand_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &1911531707545204605
@@ -1665,11 +1665,11 @@ MonoBehaviour:
   m_Name: DisplayUtilitiesFeature Android
   m_EditorClassIdentifier: Unity.XR.MetaOpenXR:UnityEngine.XR.OpenXR.Features.Meta:DisplayUtilitiesFeature
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: 'Meta Quest: Display Utilities'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.meta-display-utilities
+  openxrExtensionStrings: XR_FB_display_refresh_rate
+  company: Unity Technologies
   priority: 0
   required: 0
 --- !u!114 &2146699090807075499
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   nameUi: 'Meta Quest: AR Camera (Passthrough)'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-meta-camera
-  openxrExtensionStrings: XR_FB_passthrough XR_FB_composition_layer_alpha_blend
+  openxrExtensionStrings: XR_FB_passthrough
   company: Unity Technologies
   priority: 0
   required: 0
@@ -1804,14 +1804,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 076937beb8763d94790d2e9cc1248ac8, type: 3}
-  m_Name: ARFoundationFeature Android
+  m_Name: ARSessionFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 1
-  nameUi: 'AR Foundation: Meta Quest Features'
+  nameUi: 'Meta Quest: AR Session'
   version: 0.1.0
-  featureIdInternal: com.unity.openxr.feature.arfoundation-meta
-  openxrExtensionStrings: 'XR_FB_passthrough XR_FB_spatial_entity XR_FB_spatial_entity_query
-    XR_FB_spatial_entity_storage XR_FB_scene '
+  featureIdInternal: com.unity.openxr.feature.arfoundation-meta-session
+  openxrExtensionStrings: XR_FB_scene_capture
   company: Unity Technologies
   priority: 0
   required: 0
@@ -1991,22 +1990,24 @@ MonoBehaviour:
   m_Name: WSA
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 5042577589156329498}
-  - {fileID: -2381090387618591329}
-  - {fileID: 3248602656215098997}
-  - {fileID: -8939066665157449454}
-  - {fileID: 499066867633824850}
-  - {fileID: 370417978492554722}
-  - {fileID: 8305501370671237690}
-  - {fileID: -5022441705129952878}
-  - {fileID: 5765861548572422369}
-  - {fileID: -7773718812875860609}
-  - {fileID: 4361237768346609889}
-  - {fileID: -8010738350575489640}
-  - {fileID: -7768313152669196288}
-  - {fileID: -1738509262826135873}
-  - {fileID: 4521367536559533089}
-  - {fileID: -3032281408871642287}
+  - {fileID: -4044341611443333396}
+  - {fileID: 5288866871961977797}
+  - {fileID: 7494278338528699726}
+  - {fileID: 1574953205463496824}
+  - {fileID: -5085399754233095129}
+  - {fileID: -5266021458503843029}
+  - {fileID: -7774399631816435281}
+  - {fileID: 7779935992739557980}
+  - {fileID: 407063937896212111}
+  - {fileID: -2176741581092389660}
+  - {fileID: 6455424634268734451}
+  - {fileID: 5875639114591497488}
+  - {fileID: -2189420939540426264}
+  - {fileID: 5211997662046495646}
+  - {fileID: 226490667663996316}
+  - {fileID: -5304377096286894343}
+  - {fileID: -1673031172067446707}
+  - {fileID: -5690498264285469916}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -2170,11 +2171,11 @@ MonoBehaviour:
   m_Name: PalmPoseInteraction Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Palm Pose
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.palmpose
+  openxrExtensionStrings: XR_EXT_palm_pose
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &5288866871961977797
@@ -2190,11 +2191,11 @@ MonoBehaviour:
   m_Name: DPadInteraction Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: D-Pad Binding
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.dpadinteraction
+  openxrExtensionStrings: XR_KHR_binding_modification XR_EXT_dpad_binding
+  company: Unity
   priority: 0
   required: 0
   forceThresholdLeft: 0.5
@@ -2304,11 +2305,11 @@ MonoBehaviour:
   m_Name: MicrosoftMotionControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: Microsoft Motion Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.microsoftmotioncontroller
   openxrExtensionStrings: 
-  company: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &5883027821610069653
@@ -2357,11 +2358,11 @@ MonoBehaviour:
   m_Name: MicrosoftHandInteraction Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Microsoft Hand Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_MSFT_hand_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &6609416593052356030
@@ -2457,11 +2458,11 @@ MonoBehaviour:
   m_Name: EyeGazeInteraction Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Eye Gaze Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.eyetracking
+  openxrExtensionStrings: XR_EXT_eye_gaze_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &7497383018830012468
@@ -2583,11 +2584,11 @@ MonoBehaviour:
   m_Name: KHRSimpleControllerProfile Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: Khronos Simple Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.khrsimpleprofile
   openxrExtensionStrings: 
-  company: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &7852363257649216605
