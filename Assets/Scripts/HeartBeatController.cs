@@ -30,6 +30,24 @@ public class HeartBeatController : MonoBehaviour
     [Tooltip("Intensity of the second haptic pulse (0-1)")]
     private float m_SecondPulseIntensity = 0.6f;
 
+    [Header("Heartbeat Audio")]
+    [SerializeField]
+    [Tooltip("AudioSource to play heartbeat sounds")]
+    private AudioSource m_HeartbeatAudioSource;
+
+    [SerializeField]
+    [Tooltip("First heartbeat sound (systole)")]
+    private AudioClip m_FirstHeartbeatSound;
+
+    [SerializeField]
+    [Tooltip("Second heartbeat sound (diastole) - optional")]
+    private AudioClip m_SecondHeartbeatSound;
+
+    [SerializeField]
+    [Tooltip("Volume for heartbeat sounds (0-1)")]
+    [Range(0f, 1f)]
+    private float m_HeartbeatVolume = 1.0f;
+
     [SerializeField]
     [Tooltip("Left controller node")]
     private XRNode m_LeftControllerNode = XRNode.LeftHand;
@@ -45,6 +63,14 @@ public class HeartBeatController : MonoBehaviour
 
     void Start()
     {
+        // Initialize AudioSource if not assigned
+        if (m_HeartbeatAudioSource == null)
+        {
+            m_HeartbeatAudioSource = gameObject.AddComponent<AudioSource>();
+            m_HeartbeatAudioSource.playOnAwake = false;
+            m_HeartbeatAudioSource.spatialBlend = 0f;
+        }
+
         if (m_TimestampsFile != null)
         {
             LoadTimestamps();
@@ -102,6 +128,12 @@ public class HeartBeatController : MonoBehaviour
     private void PlayHeartbeatPulse()
     {
         SendHapticToNodes(m_FirstPulseIntensity, m_FirstPulseDuration);
+
+        if (m_FirstHeartbeatSound != null && m_HeartbeatAudioSource != null)
+        {
+            m_HeartbeatAudioSource.PlayOneShot(m_FirstHeartbeatSound, m_HeartbeatVolume);
+        }
+
         StartCoroutine(PlaySecondPulse());
     }
 
@@ -109,6 +141,11 @@ public class HeartBeatController : MonoBehaviour
     {
         yield return new WaitForSeconds(m_PulseDelay);
         SendHapticToNodes(m_SecondPulseIntensity, m_SecondPulseDuration);
+
+        if (m_SecondHeartbeatSound != null && m_HeartbeatAudioSource != null)
+        {
+            m_HeartbeatAudioSource.PlayOneShot(m_SecondHeartbeatSound, m_HeartbeatVolume);
+        }
     }
 
     private void SendHapticToNodes(float intensity, float duration)
@@ -166,5 +203,16 @@ public class HeartBeatController : MonoBehaviour
         m_TimestampsFile = newTimestampsFile;
         StopHeartbeat();
         LoadTimestamps();
+    }
+
+    public void SetAudioClips(AudioClip firstBeat, AudioClip secondBeat)
+    {
+        m_FirstHeartbeatSound = firstBeat;
+        m_SecondHeartbeatSound = secondBeat;
+    }
+
+    public void SetHeartbeatVolume(float volume)
+    {
+        m_HeartbeatVolume = Mathf.Clamp01(volume);
     }
 }

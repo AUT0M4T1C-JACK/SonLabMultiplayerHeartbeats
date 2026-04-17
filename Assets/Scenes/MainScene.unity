@@ -2440,6 +2440,10 @@ MonoBehaviour:
   m_PulseDelay: 0.19
   m_SecondPulseDuration: 0.08
   m_SecondPulseIntensity: 0.3
+  m_HeartbeatAudioSource: {fileID: 0}
+  m_FirstHeartbeatSound: {fileID: 8300000, guid: b51d3601c28e09d418ccb161786bca92, type: 3}
+  m_SecondHeartbeatSound: {fileID: 8300000, guid: 6b7131296311245409bf1fe586395166, type: 3}
+  m_HeartbeatVolume: 1
   m_LeftControllerNode: 4
   m_RightControllerNode: 5
 --- !u!114 &1972375991
