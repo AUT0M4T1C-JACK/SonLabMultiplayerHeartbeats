@@ -546,10 +546,10 @@ MonoBehaviour:
   m_Name: ARAnchorFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 1
-  nameUi: 'AR Foundation: Meta Quest Anchor'
+  nameUi: 'Meta Quest: AR Anchors'
   version: 0.1.0
   featureIdInternal: com.unity.openxr.feature.arfoundation-meta-anchor
-  openxrExtensionStrings: 'XR_FB_spatial_entity XR_FB_spatial_entity_query XR_FB_spatial_entity_storage '
+  openxrExtensionStrings: XR_FB_spatial_entity
   company: Unity Technologies
   priority: 0
   required: 0
@@ -1264,7 +1264,6 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 1911531707545204605}
   - {fileID: 7558681416710770871}
   - {fileID: 1439519674761587512}
   - {fileID: 3554264124859437666}
@@ -1275,11 +1274,12 @@ MonoBehaviour:
   - {fileID: 7497383018830012468}
   - {fileID: 5318875876809220302}
   - {fileID: -1025905340561916859}
-  - {fileID: 8808601203237548436}
-  - {fileID: -9158263212284301082}
-  - {fileID: 7717511180681032800}
-  - {fileID: 6612400554289680647}
-  - {fileID: -8470163300371861798}
+  - {fileID: -5883651887148789007}
+  - {fileID: 2146699090807075499}
+  - {fileID: 5588249299074949802}
+  - {fileID: -2869731202771628586}
+  - {fileID: -6485065031911011085}
+  - {fileID: 624869861315048294}
   - {fileID: -3884623058556172510}
   - {fileID: -5190053797094401786}
   - {fileID: -6078868055869984845}
