@@ -9,4 +9,8 @@ public static class Utility
     public const byte RevealPrice4EventCode = 34;
     public const byte RevealPrice5EventCode = 35;
     public const byte HideAllPricesEventCode = 36;
+    // Scene Switching
+    public const byte LoadScene1EventCode = 37;
+    public const byte LoadScene2EventCode = 38;
+    public const byte LoadScene3EventCode = 39;
 }

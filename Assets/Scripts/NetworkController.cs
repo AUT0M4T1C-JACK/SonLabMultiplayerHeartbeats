@@ -7,6 +7,7 @@ public class NetworkController : MonoBehaviourPunCallbacks, IOnEventCallback
 {
     [SerializeField] private HeartBeatController HeartBeatController;
     [SerializeField] private PriceManager PriceManager;
+    [SerializeField] private SceneLoader SceneLoader;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +87,28 @@ public class NetworkController : MonoBehaviourPunCallbacks, IOnEventCallback
                 if (PriceManager != null)
                 {
                     PriceManager.HideAllPrices();
+                }
+                break;
+            // Scene switching
+            case Utility.LoadScene1EventCode:
+                if (SceneLoader != null)
+                {
+                    SceneLoader.LoadScene1();
+                    Debug.Log("Loading Scene 1");
+                }
+                break;
+            case Utility.LoadScene2EventCode:
+                if (SceneLoader != null)
+                {
+                    SceneLoader.LoadScene2();
+                    Debug.Log("Loading Scene 2");
+                }
+                break;
+            case Utility.LoadScene3EventCode:
+                if (SceneLoader != null)
+                {
+                    SceneLoader.LoadScene3();
+                    Debug.Log("Loading Scene 3");
                 }
                 break;
         }
